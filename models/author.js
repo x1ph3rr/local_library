@@ -23,7 +23,7 @@ AuthorSchema.virtual("name").get(function(){
 
 //virtual for author's URL
 AuthorSchema.virtual("url").get(function(){
-    return `/catalog/author/${this.id}`;
+    return `/catalog/author/${this._id}`;
 });
 
 //export model
